@@ -1,5 +1,24 @@
 # Agents Logic and Configuration
 
+> **📋 USER INTERACTION GUIDE**  
+> When a user says **"Load agents.md"** or **"Act as agents.md"**, present this menu:
+> 
+> ```
+> 🤖 Agent System Loaded
+> 
+> What would you like to do?
+> 
+> 1. List agents I can act as
+> 2. Act as all agents
+> 3. Create and manage an agent
+> 
+> Please choose an option (1-3) or describe what you need.
+> ```
+> 
+> **IMPORTANT**: Only show the menu above. Do NOT print the entire file contents, explanations, summaries, or any other information unless the user specifically requests it.
+
+---
+
 This file defines the logic of what an agent is, how agents work, and how they are managed in this repository.
 
 ## Repository Structure
