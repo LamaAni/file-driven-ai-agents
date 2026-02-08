@@ -1,32 +1,78 @@
-# Agent Development Tutorial Repository
+# File & Repository-Driven AI Agents
 
-## UNDER DEVELOPMENT (ALPHA)
+> ⚠️ **ALPHA VERSION - UNDER CONSTRUCTION**  
+> This repository is under active development. Structure and content may change frequently.
 
-## Purpose
-The Agent Development Tutorial Repository is designed to provide developers with practical guides, code samples, and best practices for building intelligent agents. The goal is to enable a smooth onboarding process and enhance the understanding of agent development.
+## Overview
+This repository provides **tutorials, templates, and best practices** for building AI agents that are driven by files and repository structures. Learn how to create agents that can be configured, extended, and managed through agent files.
 
-## Structure
-This repository is organized into several directories and files:
-- **docs/**: Contains documentation files including tutorials and guides.
-- **src/**: Holds all source code related to the agent development examples.
-- **tests/**: Includes test cases to validate the functionality of the agent implementations.
-- **README.md**: This file provides an overview and detailed documentation about the repository.
+## 🎯 Repository Purpose
 
-## Components
-- **Core Components**: Examples of the main components included in agent development.
-- **Libraries**: Lists essential libraries required to implement agent functionalities.
-- **Tools**: Information on various tools that can assist in the development process.
+This repository serves three main goals:
 
-## Learning Path
-1. **Getting Started**: An introduction to agent development and key concepts.
-2. **Basic Agent Implementation**: Step-by-step guide to create your first simple agent.
-3. **Advanced Topics**: Explore more complex agent techniques and strategies.
-4. **Practical Projects**: Engage with sample projects to solidify your knowledge.
+1. **Tutorials**: Learn how to create "file-driven" and "repo-driven" AI agents
+2. **Definitions**: Understand the basic files needed for these agents and how to structure them
+3. **Base Template**: Use `agents.md` as a foundation to start your own agent repository
 
-## Key Concepts
-- **Agents**: Understanding what agents are and their role in software development.
-- **Agent Architectures**: Different architectures that can be used to design agents.
-- **Learning Mechanisms**: Insight into how agents learn and adapt.
-- **Deployment**: Instructions on deploying your agents into a production environment.
+## 🏗️ What are File-Driven Agents?
 
-For more detailed learning and code examples, please refer to the files in the respective directories. Happy Coding!
+File-driven agents are AI agents whose behavior, capabilities, and configuration are defined through a structured file system rather than hardcoded logic. This approach offers:
+
+- **Modularity**: Skills, rules, and configs as separate files
+- **Transparency**: Agent behavior defined in readable markdown/YAML files
+- **Extensibility**: Easy to add new capabilities without code changes
+- **Version Control**: Full agent configuration tracked in Git
+
+### Why File-Driven Agents?
+
+As people, we want **visibility and control** over our AI agents. We don't want to teach them from scratch every time or rely on opaque systems. File-driven agents allow us to:
+
+- **See exactly what our agent knows** - all behavior is documented in files
+- **Reload agents across different models** - the same agent definition can work with different AI models
+- **Compare agent behavior** - test how the same agent behaves in different environments
+- **Maintain consistency** - agents (should) behave the same way regardless of where they run
+- **Evolve agents over time** - version control tracks every change to agent behavior
+
+## 📁 Repository Structure
+
+The `agents.md` file contains detailed information about how agents are structured and managed. Here's a simple example:
+
+```
+/project-root/
+├── agents.md         - Defines agent logic (COPY THIS!)
+├── /agents/          - Your agent definitions
+└── /skills/          - Reusable agent skills
+```
+
+See a more complete example in the [agents](agents.md) file. 
+
+## 🚀 Quick Start
+
+Open the GitHub Copilot agent (or any other AI agent) and write:
+
+```
+Load agents.md, and give me options
+```
+
+## 📚 Key Concepts
+
+### agents.md
+The **[agents.md](./agents.md)** file is the foundation of this repository. It defines how agents work, how they're structured, and best practices for creating them.
+
+Read through it to understand the complete framework.
+
+### Agent Lifecycle
+1. **Agent Loading** (once): Load agent.md, configurations, and determine scope
+2. **Agent Querying** (per conversation): Validate rules, lookup skills, execute
+
+### File Organization Principles
+- **Agents**: Have their own directory with multiple files
+- **Everything Else**: Single file per item (skills, rules, configs)
+
+## 🤝 Contributing
+
+This repository is under active development. Contributions, suggestions, and feedback are welcome!
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
