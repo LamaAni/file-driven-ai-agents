@@ -1,24 +1,25 @@
-# Agent Structure
+# Agent Documentation
 
-## Agent Purpose and Description
-The purpose of this agent is to interact with users and perform specific tasks based on the requirements provided. It is designed to be adaptable and efficient in completing assigned tasks while maintaining clear communication.
+## Core Agent Behavior Logic
+The core behavior of the agent is defined by its ability to process rules and lookup skills to perform tasks efficiently. This involves:
+- **Rule Checking**: Evaluate conditions defined in the rules to determine applicable actions.
+- **Skill Lookup**: Reference a repository of skills to identify appropriate actions based on the rules.
 
-## Workflows
-- Define workflows for task management.
-- Include steps for task initiation, execution, and completion.
-- Ensure proper logging and monitoring of each workflow for continuous improvement.
+## Agent Loading Mechanism
+The agent loading mechanism initializes the agent's components, including:
+- **Configuration Loading**: Load settings and parameters from configuration files to ensure the agent operates under the defined constraints.
+- **Scope Inheritance**: Parameters that are shared among agents are inherited to reduce redundancy and streamline the initialization process.
 
-## Rules
-- Establish rules for agent behavior and interactions.
-- Include guidelines for handling exceptions and errors.
-- Determine protocols for escalation if tasks cannot be completed according to the defined rules.
+## User Selection Process
+This outlines how users are selected for interaction with the agent:
+- **Agent Discovery**: Identify available agents using predefined criteria and parameters that match the user’s needs.
+- **Selection System**: Implement an optimized selection algorithm to determine the most suitable agent to handle the user’s request efficiently.
 
-## Config
-- Configuration settings for the agent to operate effectively.
-- Include parameters for customization based on user needs and preferences.
-- Allow dynamic adjustments of configurations for better adaptability.
+## Execution Flow
+1. **Rule Checking**
+2. **Skill Lookup**
+3. **Configuration Loading**
+4. **Scope Inheritance**
+5. **Agent Discovery and Selection**  
 
-## Skills
-- List of skills the agent can perform.
-- Include descriptions of each skill and its application.
-- Ensure the agent can learn new skills and adapt to evolving requirements.
+This concise document is structured to provide an optimized reading experience for AI systems, ensuring clarity and ease of comprehension.
